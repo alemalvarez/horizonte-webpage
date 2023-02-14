@@ -1,0 +1,252 @@
+@import url(main-style.css);
+
+main {
+  margin: 0;
+}
+
+div#banner {
+  margin-top: 8%;
+  height: 900px;
+  width: 100%;
+
+  display: flex;
+}
+
+#banner #banner-image-container {
+  position: relative;
+
+  z-index: 0;
+  width: 60%;
+  height: 90%;
+
+  /*TODO: Figure out image aligment*/
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+#banner #banner-image {
+  height: 1500px;
+}
+
+#banner #title-container {
+  width: 40%;
+  height: 100%;
+
+  padding: 15% 5% 0 0;
+  z-index: 1;
+}
+
+#banner #main-title {
+  font-weight: 400;
+  font-size: 2em;
+
+  text-align: right;
+  direction: rtl;
+}
+
+@media only screen and (max-width: 800px) {
+  div#banner {
+    margin-top: 30%;
+    height: 800px;
+  }
+
+  #banner #banner-image-container {
+    width: 100%;
+    align-items: center;
+  }
+
+  #banner #banner-image {
+    height: 3000px;
+  }
+
+  #banner #title-container {
+    width: 100%;
+    padding: 100px 0 0 70px;
+    position: absolute;
+
+    font-size: 0.7em;
+  }
+
+  #banner #main-title {
+    text-align: left;
+    direction: ltr;
+  }
+
+  #banner #main-title > a.big-text {
+    font-size: 2em;
+  }
+}
+
+div#content-section {
+  width: 100%;
+  height: 1200px;
+  margin-top: -90px;
+  display: flex;
+}
+
+#content-section #text-container {
+  width: 60%;
+  height: 100%;
+  padding-top: 80px;
+
+  background: var(--yellow-tone);
+  border-bottom: 1px solid black;
+}
+
+#content-section #excelencia-title {
+  font-family: "EB Garamond", serif;
+  font-size: 3em;
+  font-weight: 300;
+  width: 100%;
+  margin-left: 30px;
+  padding-left: 10%;
+  border-bottom: 2px solid black;
+  margin-bottom: 150px;
+}
+
+#content-section #text-container > p {
+  padding-left: 15%;
+  padding-right: 10%;
+  margin-top: 60px;
+  font-size: 1.6em;
+  font-weight: 400;
+}
+
+#content-section #text-container p > a.highlight {
+  color: white;
+  font-size: 1.4em;
+}
+
+#content-section #image-container {
+  position: relative;
+  z-index: 0;
+  height: 100%;
+  width: 40%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#content-section #content-image {
+  height: 1400px;
+}
+
+@media only screen and (max-width: 800px) {
+  div#content-section {
+    height: auto;
+  }
+
+  #content-section #image-container {
+    display: none;
+  }
+
+  #content-section #excelencia-title {
+    margin: 0 0 50px 0;
+    width: 100%;
+
+    font-size: 2.2em;
+  }
+
+  #content-section #text-container {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  #content-section #text-container > p {
+    font-size: 1.4em;
+  }
+}
+
+div#team-section {
+  height: auto;
+  width: 100%;
+}
+
+#team-section #intro-container {
+  width: 100%;
+  padding: 15% 10%;
+}
+
+#team-section #intro-container > p {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+#team-section #workers-container {
+  width: 100%;
+  height: 500px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+#team-section div.worker-card {
+  position: relative;
+  width: 30%;
+  background: var(--yellow-tone);
+  border: 1px solid black;
+}
+
+#team-section div.img-container {
+  width: 80%;
+  height: 70%;
+  background: #000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#team-section img.worker-img {
+  height: 120%;
+}
+
+#team-section div.worker-card > h3 {
+  position: absolute;
+  right: 0;
+  font-weight: 300;
+  font-size: 2em;
+}
+
+#team-section p.profession {
+  position: absolute;
+  left: 5px;
+  bottom: 3px;
+}
+
+div.fill-div {
+  position: relative;
+  height: 1100px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  #team-section #workers-container {
+    display: block;
+    height: auto;
+  }
+
+  #workers-container div.worker-card {
+    display: block;
+    width: 90%;
+    height: 400px;
+    margin: 0 10% 15% 0;
+  }
+
+  #workers-container div.right {
+    margin: 0 0 15% 10%;
+  }
+
+  div.fill-div {
+    height: 900px;
+  }
+}
+
+footer#main-footer {
+  bottom: 0;
+}

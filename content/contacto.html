@@ -1,0 +1,160 @@
+d<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HORIZONTE</title>
+    <link rel="stylesheet" href="../styles/contacto.css" />
+    <script
+      src="https://kit.fontawesome.com/d9026ee1b4.js"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+    <script src="../js/main.js" defer></script>
+  </head>
+  <body>
+    <header id="main-header">
+      <div id="logo-container">
+        <!--TODO: Cambiar logo por uno mejor hecho en PS. Font weigths no son iguales que en XD?-->
+        <a href="index.html">
+            <img
+            id="main-logo"
+            src="../media/img/main-logo.png"
+            alt="Logo principal."
+          />
+        </a>
+      </div>
+      <div id="nav-top">
+        <nav id="nav-container">
+          <ul>
+            <li class="nav-element">
+              <a class="nav-element-link" href="quienes.html"> ¿quiénes? </a>
+            </li>
+            <li class="nav-element">
+              <a class="nav-element-link" href="obras.html"> nuestras obras </a>
+            </li>
+            <li class="nav-element">
+              <a class="nav-element-link" href="servicios.html"> servicios </a>
+            </li>
+            <li class="nav-element">
+              <a class="nav-element-link" href="#"> contacto </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="bars-menu-container">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div id="mobile-nav-container">
+        <div id="close-menu-container">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <nav id="nav-container">
+          <ul>
+            <li class="nav-element">
+              <a class="nav-element-link" href="index.html"> inicio </a>
+            </li>
+            <li class="nav-element">
+              <a class="nav-element-link" href="quienes.html"> ¿quiénes? </a>
+            </li>
+            <li class="nav-element">
+              <a class="nav-element-link" href="obras.html"> nuestras obras </a>
+            </li>
+            <li class="nav-element">
+              <a class="nav-element-link" href="servicios.html"> servicios </a>
+            </li>
+            <li class="nav-element">
+              <a class="nav-element-link active" href="contacto.html"> contacto </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="content-container">
+        <div id="video-container">
+            <video id="main-video" autoplay muted loop>
+                <source src="../media/vid/video-contacto_CPhqOGfm.mp4">
+            </video>
+        </div>
+        <div id="contact-container">
+            <div id="form-container">
+                <h2>
+                    CONTÁCTANOS SIN COMPROMISO.
+                </h2>
+                <form action="#">
+                    <input
+                    type="text"
+                    placeholder="nombre"
+                    required
+                    >
+                    <input 
+                    type="email"
+                    placeholder="email"
+                    required
+                    >
+                    <input
+                    id="submit-button"
+                    type="submit"
+                    value="ENVIAR">
+                </form>
+            </div>
+            <div id="address-container">
+                <h2>
+                    O ENCUÉNTRANOS EN:
+                </h2>
+                <address>
+                    Calle Estaño s/n<br>
+                    28010<br>
+                    Madrid, España.
+                </address>
+            </div>
+        </div>
+    </main>
+    <div class="fill-div">
+      <footer id="main-footer">
+        <div id="rrss-container">
+          <ul id="rrss">
+            <li class="rs">
+              <a href="https://twitter.com">
+                <i class="fa-brands fa-twitter""></i>
+              </a>
+            </li>
+            <li class="rs">
+              <a href="https://instagram.com">
+                <i class="fa-brands fa-instagram" href=""></i>
+              </a>
+            </li>
+            <li class="rs">
+              <a href="https://facebook.com">
+                <i class="fa-brands fa-facebook-f" href=""></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="legal-stuff">
+          <ul>
+            <li class="legal-stuff-element">
+              <a href="#">Política de privacidad.</a>
+            </li>
+            <li class="legal-stuff-element">
+              <a href="#">Aviso legal.</a>
+            </li>
+            <li class="legal-stuff-element">
+              <a href="#">Política de cookies.</a>
+            </li>
+          </ul>
+        </div>
+        <div id="copyright-container">
+          <p>
+            &copy; 2022 Alejandro Mata. All rights reserved.
+          </p>
+        </div>
+        </div>
+      </footer>
+    </div>
+    
+    </body>
+  </html>
+  

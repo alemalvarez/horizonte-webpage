@@ -1,0 +1,129 @@
+@import url(main-style.css);
+
+main#content-container{
+    width: 100%;
+    height: 1000px;
+    margin-top: 8%;
+
+    position: relative;
+}
+
+#content-container #video-container{
+    z-index: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+#content-container #main-video{
+    height: 130%;
+}
+
+#content-container #contact-container{
+    width: 100%;
+    height: 70%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#content-container #form-container{
+    width: 40%;
+    height: 60%;
+    padding: 3% 3% 0 3%;
+    background: rgba(255, 255, 255, 0.8); 
+}
+
+#content-container #form-container>form{
+    width: 100%;
+    height: 100%;
+}
+
+#content-container #form-container>form>input{
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+    height: 45px;
+    border: 1px solid rgba(0, 0, 0, 0.445);
+    font-size: 1.3em;
+
+    border-radius: 0%;
+}
+
+#content-container #submit-button{
+    background: none;
+
+    transition: all ease-in-out .4s;
+}
+
+#content-container #submit-button:hover{
+    color: var(--yellow-tone);
+    border: 2px solid var(--yellow-tone);
+
+    transition: all ease-in-out .4s;
+}
+
+#content-container #address-container{
+    width: 40%;
+    height: 40%;
+    padding: 3% 10% 0 10%;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+@media only screen and (max-width: 700px){
+    main#content-container{
+        margin-top: 30%;
+    }
+
+    #content-container #contact-container{
+        display: block;
+    }
+
+    #content-container #form-container{
+        width: 100%;
+        margin: 20% 0 40px 0;
+    }
+
+    #content-container #address-container{
+        width: 100%;
+    }
+
+    #content-container input[type='submit']{
+        color: black;
+        font-weight: 300;
+        font-size: .8em;
+    }
+}
+
+#content-container #address-container>address{
+    font-style: normal;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+#content-container h2{
+    text-align: center;
+    color: var(--yellow-tone);
+    font-weight: 400;
+}
+
+div.fill-div {
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+  }
+
+footer#main-footer{
+    position: absolute;
+    bottom: 0;
+}
+  

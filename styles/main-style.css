@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat:wght@200&display=swap");
+
+* {
+  box-sizing: border-box;
+  --black-tone: #070208;
+  --yellow-tone: #f5c61d;
+}
+
+body,
+html {
+  /*Fuente usada por defecto, sans.*/
+  font-family: Helvetica, sans-serif;
+
+  margin: 0;
+  height: 100%;
+}
+
+body{
+  position: relative;
+}
+
+a.highlight {
+  color: var(--yellow-tone);
+}
+
+a.big-text {
+  font-size: 3em;
+  font-weight: 400;
+}
+
+a.white-text {
+  color: white;
+}
+
+/*TODO: Añadir efecto de hacer pequeño el logo y/o header en*/
+header#main-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+
+  padding-top: 20px;
+  display: flex;
+
+  z-index: 99;
+
+  background-color: white;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+#logo-container {
+  width: 50%;
+  text-align: right;
+}
+
+#logo-container #main-logo {
+  width: 100%;
+  max-width: 800px;
+
+  right: 0;
+}
+
+#nav-top {
+  width: 50%;
+  position: relative;
+}
+
+#nav-container {
+  width: 100%;
+  padding: 10px;
+}
+
+#nav-container ul {
+  width: 90%;
+
+  position: absolute;
+  bottom: 20px;
+
+  padding: 0;
+  margin: auto 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 2px solid black;
+}
+
+#nav-container .nav-element {
+  list-style-type: none;
+  padding: 15px 0;
+}
+
+#nav-container .nav-element-link {
+  font-weight: 350;
+
+  color: var(--black-tone);
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+
+  transition: color 300ms;
+}
+
+#nav-container .nav-element-link:hover {
+  color: var(--yellow-tone);
+  transition: color 300ms ease-out;
+}
+
+#bars-menu-container{
+  width: 100%;
+  height: 60px;
+  background: white;
+  position: absolute;
+  bottom:  -60px;
+  display: none;
+
+  text-align: center;
+  font-size: 40px;
+}
+
+#mobile-nav-container{
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 100vh;
+  background: white;
+
+  padding-top: 30%;
+
+  display: none;
+
+  z-index: 99;
+}
+
+#mobile-nav-container #nav-container ul{
+  display: block;
+  position: relative;
+}
+
+#mobile-nav-container #nav-container a.active{
+  color: var(--yellow-tone);
+}
+
+#mobile-nav-container #close-menu-container{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 10%;
+  font-size: 2em;
+}
+
+@media only screen and (max-width: 800px){
+  #logo-container{
+    width: 100%;
+    text-align: center;
+  }
+
+  #nav-top{
+    display: none;
+  }
+
+  #logo-container #main-logo{
+    width: 80%;
+  }
+
+  #bars-menu-container{
+    padding-top: 10px;
+    display: block;
+  }
+}
+
+#go-top{
+  z-index: 99;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  font-size: 2em;
+  color: var(--yellow-tone);
+
+  display: none;
+
+  transition: all ease-in-out .2s;
+}
+
+#go-top.black{
+  color: black;
+}
+
+#go-top:hover{
+  color:rgba(255, 255, 255, 0.767);
+  transform: scale(1.1, 1.1);
+}
+
+footer#main-footer {
+  height: 800px;
+  position: absolute;
+  width: 100%;
+}
+
+#main-footer #rrss {
+  width: 40%;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+#main-footer .rs {
+  list-style-type: none;
+  font-size: 3em;
+}
+
+#main-footer .rs>a{
+  color: var(--black-tone);
+}
+
+#main-footer .rs>a:hover{
+  color: var(--yellow-tone);
+  transition: color 400ms ease-out;
+}
+
+#nav-bottom {
+  width: 80%;
+  height: 150px;
+  margin: auto;
+  position: relative;
+}
+
+#nav-bottom > #nav-container > ul {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+  #main-footer #rrss{
+    width: 80%;
+    justify-content: space-between;
+  }
+
+  #nav-bottom{
+    display: none;
+  }
+}
+
+#legal-stuff {
+  width: 100%;
+  height: 40px;
+  margin-top: 280px;
+  border-bottom: 1px solid black;
+}
+
+#legal-stuff > ul {
+  display: flex;
+  justify-content: space-around;
+
+  padding: 0;
+}
+
+#legal-stuff .legal-stuff-element {
+  list-style-type: none;
+  font-size: 0.9em;
+}
+
+#legal-stuff .legal-stuff-element > a {
+  color: var(--black-tone);
+  text-decoration: none;
+}
+
+#copyright-container {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+
+#copyright-container > p {
+  color: rgba(0, 0, 0, 0.295);
+}

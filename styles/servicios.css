@@ -1,0 +1,174 @@
+@import url(main-style.css);
+
+main {
+  margin: 0;
+}
+
+div#banner {
+  margin-top: 8%;
+  height: 900px;
+  width: 100%;
+
+  display: flex;
+}
+
+#banner #banner-image-container {
+  z-index: 0;
+  width: 65%;
+  height: 90%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 70% 100%);
+}
+
+#banner #banner-image {
+  width: 130%;
+}
+
+#banner #title-container {
+  width: 35%;
+  height: 100%;
+
+  padding: 15% 5% 0 0;
+  z-index: 1;
+}
+
+#banner #main-title {
+  font-weight: 400;
+  direction: rtl;
+}
+
+@media only screen and (max-width: 800px){
+  div#banner{
+    margin-top: 30%;
+    height: 800px;
+  }
+
+  #banner #banner-image-container{
+    width: 100%;
+    clip-path: none;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  #banner #banner-image{
+    height: 200%;
+  }
+
+  #banner #title-container{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+
+  #banner #main-title > a.big-text {
+    font-size: 2em;
+  }
+}
+
+div#intro-container {
+  width: 100%;
+  height: 500px;
+  padding: 200px 0;
+}
+
+#intro-container > p {
+  width: 80%;
+  margin: auto;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 800px){
+  div#intro-container{
+    padding: 100px 0;
+  }
+}
+
+div.servicio-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+
+  border-bottom: 1px solid black;
+}
+
+div.servicio-container div.servicio-image-container {
+  width: 50%;
+  height: 100%;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  z-index: 0;
+}
+
+div.servicio-container div.servicio-title-container {
+  position: absolute;
+  top: 25%;
+  z-index: 1;
+}
+
+div.servicio-container div.servicio-title-container > h2 {
+  color: var(--yellow-tone);
+  font-size: 4em;
+  font-weight: 400;
+}
+
+div.servicio-container img.servicio-img {
+  width: 140%;
+}
+
+div.servicio-container div.servicio-text-container {
+  width: 50%;
+  height: 100%;
+
+  padding: 7% 5% 0 3%;
+}
+
+div.servicio-container div.servicio-text-container > p {
+  font-size: 1.3em;
+}
+
+div.servicio-container div.servicio-text-container > p > a.highlight {
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 800px){
+  div.servicio-container{
+    height: auto;
+    width: 100%;
+    display: block;
+  }
+
+  div.servicio-container div.servicio-image-container{
+    width: 100%;
+    height: 400px;
+  }
+
+  div.servicio-container div.servicio-text-container{
+    width: 100%;
+  }
+
+  div.servicio-container div.servicio-title-container{
+    font-size: 0.6em;
+  }
+}
+
+div.fill-div {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+}
+
+footer#main-footer{
+  position: absolute;
+  bottom: 0;
+}

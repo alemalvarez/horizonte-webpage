@@ -1,0 +1,186 @@
+@import url(main-style.css);
+
+main {
+  margin: 0;
+}
+
+div#banner {
+  margin-top: 8%;
+  height: 900px;
+  width: 100%;
+
+  position: relative;
+}
+
+#banner #banner-image-container {
+  z-index: 0;
+  width: 100%;
+  height: 90%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#banner #banner-image {
+  width: 150%;
+}
+
+#banner #title-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  text-align: center;
+  padding-top: 15%;
+}
+
+#banner #main-title {
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 800px) {
+  div#banner {
+    margin-top: 30%;
+    height: 800px;
+  }
+  #banner #banner-image-container {
+    width: 100%;
+  }
+
+  #banner #banner-image {
+    height: 120%;
+    width: auto;
+  }
+
+  #banner #title-container {
+    position: absolute;
+    font-size: 0.7em;
+  }
+
+  #banner #main-title > a.big-text {
+    font-size: 2em;
+  }
+}
+
+div#intro-container {
+  width: 100%;
+  height: 500px;
+  margin-top: -110px;
+  background: var(--yellow-tone);
+  padding: 200px 0;
+  text-align: center;
+}
+
+#intro-container > p {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+div.obra-container {
+  height: 800px;
+  width: 100%;
+
+  display: flex;
+}
+
+div.obra-container div.obra-text-container {
+  width: 30%;
+  height: 100%;
+
+  z-index: 1;
+
+  text-align: center;
+}
+
+div.photo-right div.obra-text-container {
+  padding: 20% 0 0 5%;
+}
+
+div.photo-left div.obra-text-container {
+  padding: 20% 10% 0 0;
+}
+
+div.obra-container div.obra-title-container {
+  width: 120%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+div.obra-container div.obra-details-container {
+  width: 120%;
+  padding-top: 20px;
+  font-family: "EB Garamond", serif;
+}
+
+div.obra-container div.obra-image-container {
+  z-index: 0;
+  width: 70%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+div.photo-right div.obra-image-container {
+  clip-path: polygon(0% 100%, 30% 0%, 100% 0%, 100% 100%);
+}
+
+div.photo-left div.obra-image-container {
+  clip-path: polygon(0% 100%, 0% 0%, 70% 0%, 100% 100%);
+}
+
+div.obra-container img.obra-image {
+  height: 140%;
+  width: auto;
+
+  transition: transform ease-in-out 0.4s;
+}
+
+div.obra-container img.obra-image:hover {
+  transform: scale(1.2, 1.2);
+}
+
+@media only screen and (max-width: 800px) {
+  div.obra-container div.obra-title-container {
+    width: 100%;
+  }
+
+  div.obra-container div.obra-text-container {
+    position: absolute;
+    width: 80%;
+  }
+
+  div.obra-container div.obra-image-container {
+    width: 100%;
+  }
+
+  div.photo-left {
+    position: relative;
+  }
+
+  div.photo-right div.obra-text-container {
+    text-align: left;
+  }
+
+  div.photo-left div.obra-text-container {
+    width: 100%;
+    text-align: right;
+    direction: rtl;
+  }
+}
+
+div.fill-div {
+  position: relative;
+  width: 100%;
+  height: 900px;
+}
+
+footer#main-footer {
+  position: absolute;
+  bottom: 0;
+}

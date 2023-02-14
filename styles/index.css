@@ -1,0 +1,224 @@
+@import url(main-style.css);
+
+main {
+  margin: 0;
+}
+
+div#banner {
+  margin-top: 7%;
+  height: 900px;
+  width: 100%;
+
+  display: flex;
+}
+
+#banner #title-container {
+  width: 30%;
+  height: 100%;
+
+  padding: 5% 0 0 5%;
+  z-index: 1;
+}
+
+#banner #main-title {
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 3.5em;
+}
+
+#banner #main-video-container {
+  position: relative;
+
+  z-index: 0;
+  width: 70%;
+  height: 90%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  clip-path: polygon(0% 100%, 35% 0%, 100% 0%, 100% 100%);
+}
+
+#banner #main-video {
+  height: 700px;
+}
+
+@media only screen and (max-width: 800px) {
+  div#banner {
+    margin-top: 30%;
+    height: 800px;
+  }
+
+  #banner #main-video-container {
+    width: 100%;
+    clip-path: none;
+  }
+
+  #banner #title-container {
+    padding-top: 50px;
+
+    position: absolute;
+    color: white;
+
+    font-size: 0.8em;
+  }
+}
+
+div#premios-container {
+  width: 100%;
+  height: 600px;
+  background: var(--black-tone);
+
+  padding: 10% 0 5% 0;
+}
+
+#premios-container #premios-text-container {
+  color: white;
+  text-align: center;
+  font-family: "EB Garamond", serif;
+}
+
+#premios-container p.premios-small-text {
+  font-size: 1.4em;
+}
+
+#premios-container #premios-main-text {
+  font-size: 3em;
+}
+
+#premios-container #fechas-container {
+  width: 100%;
+  height: 30px;
+  margin-top: 10%;
+}
+
+#premios-container #fechas-container > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  padding: 0;
+}
+
+@media only screen and(max-width: 800px){
+  #premios-container{
+    margin-top: -90px;
+  }
+}
+
+#premios-container li.fecha {
+  color: #7a630f;
+  list-style-type: none;
+  font-size: 1.3em;
+  font-weight: 200;
+  font-family: "Montserrat", sans-serif;
+}
+
+div#clientes-container {
+  margin-top: 12%;
+  height: 900px;
+  width: 100%;
+
+  display: flex;
+}
+
+#clientes-container #clientes-image-container {
+  position: relative;
+
+  z-index: 0;
+  width: 70%;
+  height: 90%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+
+  clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 70% 100%);
+}
+
+#clientes-container #clientes-image {
+  height: 1100px;
+}
+
+#clientes-container #clientes-text-container {
+  width: 30%;
+  height: 100%;
+
+  padding: 20% 5% 0 0;
+
+  text-align: right;
+
+  z-index: 1;
+}
+
+#clientes-container #clientes-text {
+  font-size: 3em;
+
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+
+  text-align: right;
+  direction: rtl;
+}
+
+@media only screen and (max-width: 800px) {
+  div#clientes-container {
+    margin-top: 0;
+    height: 700px;
+  }
+
+  #clientes-container #clientes-image-container {
+    width: 100%;
+    clip-path: none;
+  }
+
+  #clientes-container #clientes-text-container{
+    position: absolute;
+    width: 100%;
+  }
+}
+
+div#decision-container {
+  margin-top: -90px;
+  width: 100%;
+  height: 900px;
+  background: var(--yellow-tone);
+
+  padding: 15% 0 0 10%;
+}
+
+#decision-container > p {
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+div.fill-div {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+#main-footer .rs>a:hover {
+  color: white;
+  transition: color 400ms ease-out;
+}
+
+#nav-bottom .nav-element-link:hover {
+  color: white;
+  transition: color 300ms ease-out;
+}
+
+#main-footer{
+  top: -200px;
+}
+
+@media only screen and (max-width: 800px){
+  div#main-footer{
+    bottom: 0;
+  }
+}
+
